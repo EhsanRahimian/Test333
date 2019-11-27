@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:text="connection in the next 15 days  "
         android:textColor="#ffff9800"
-
         android:textStyle="bold"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@+id/txt_1"
@@ -46,6 +45,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:onClick="openToast"
         />
 
 

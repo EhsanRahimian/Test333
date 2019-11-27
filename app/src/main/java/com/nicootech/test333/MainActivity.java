@@ -37,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void clickme(View view) {
-        Toast toast=Toast.makeText(this,"It's not active",Toast.LENGTH_SHORT);
-        toast.setMargin(50,50);
-        toast.show();
+    public void openToast(View view){
+        Toast.makeText(getApplicationContext(), "you clicked",
+                Toast.LENGTH_SHORT).show();
     }
 }
