@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,10 +36,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerview.setLayoutManager(mgr);
 
 
+
+
     }
 
     public void openToast(View view){
         Toast.makeText(getApplicationContext(), "you clicked",
                 Toast.LENGTH_SHORT).show();
+    }
+    public  void openActivity(View view){
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+
+        startActivity(intent);
+
     }
 }
